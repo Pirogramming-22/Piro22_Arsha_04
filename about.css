@@ -1,9 +1,17 @@
+.About {
+    font-family: var(--heading-font);
+}
+
 .About_body_first {
     padding: 60px 0;
     background-color: aqua;
 }
 
 /* About Text */
+.About_body_first_title {
+    padding: 0 12px;
+    padding-bottom: 60px;
+}
 .About_body_first_item {
     display: flex;
     justify-content: center;
@@ -43,4 +51,66 @@
     right: 0;
     bottom: 0px;
     margin: auto;
+}
+
+/* list 앞에 붙는 check 문자 */
+.About_body_first_item > div li::before {
+    content: "\f270";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.About_body_first_item > div {
+    margin-top: 24px;
+    padding: 0 12px;
+    width: 456px;
+    height: 209px;
+}
+
+.About_body_first_item > div p {
+    margin-top: 0;
+}
+.About_body_first_item > div ul {
+    list-style: none;
+    padding-left: 0;
+}
+.About_body_first_item > div li {
+    width: 456px;
+    height: 30px;
+    padding-bottom: 5px;
+}
+
+.About_body_first_item > div a {
+    color: #47b2e4;
+    padding: 8px 28px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 2px solid #47b2e4;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Read More 뒤에 붙는 화살표 */
+.About_body_first_item > div > a > i::before {
+    content: "\f138";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
 }
