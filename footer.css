@@ -40,6 +40,12 @@ footer {
     position: relative;
 }
 
+input:focus, textarea:focus {
+    border-color: #47b2e4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(71, 178, 228, 0.5);
+}
+
 .footer_newsletter form input[type="text"] {
     padding: 10px 15px;
     width: 500px;
@@ -53,9 +59,9 @@ footer {
 
 .footer_newsletter form input[type="submit"] {
     border: 0;
-    font-size: 16px;
+    font-size: 15px;
     padding: 12px 25px;
-    margin: -7px -400px -7px 0;
+    margin: -7px -405px -7px 0;
     border-radius: 50px;
     color: white;
     background-color: #3498db;
@@ -179,9 +185,6 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer_sociallinks i {
-
-}
 
 .footer_sociallinks a:hover {
     background-color: white;
