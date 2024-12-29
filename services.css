@@ -135,3 +135,88 @@
     line-height: 24px;
     margin: 0;
 }
+
+.Services_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 417.594px;
+    width: 100%;
+    position: relative;
+}
+
+.Service_second_bg::before {
+    content: "";
+    background: color-mix(in srgb, #37517e, transparent 35%);
+    position: absolute;
+    inset: 0;
+}
+
+.Service_second_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.Service_second_content {
+    color: var(--background-color);
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.Services_second_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 936px;
+}
+
+.Services_second_title > h3 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Services_second_title > p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.Services_second_call {
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services_second_call > a {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid var(--contrast-color);
+    color: var(--contrast-color);
+    margin: 10px;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+.Services_second_call > a:hover {
+    background-color: #47b2e4;
+    border-color: #47b2e4;
+}
