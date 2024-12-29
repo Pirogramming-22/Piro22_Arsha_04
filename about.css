@@ -12,6 +12,7 @@
     padding: 0 12px;
     padding-bottom: 60px;
 }
+
 .About_body_first_item {
     display: flex;
     justify-content: center;
@@ -27,6 +28,7 @@
     position: relative; /* after의 기준이 되기 위함 */
     font-family: var(--heading-font);
 }
+
 /* 라인 구현 */
 .About_body_first h2::before {
     position: absolute;
@@ -40,6 +42,7 @@
     bottom: 1px;
     margin: auto;
 }
+
 .About_body_first h2::after {
     content: "";
     background: var(--accent-color);
@@ -53,19 +56,6 @@
     margin: auto;
 }
 
-/* list 앞에 붙는 check 문자 */
-.About_body_first_item > div li::before {
-    content: "\f270";
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-}
 
 .About_body_first_item > div {
     margin-top: 24px;
@@ -76,18 +66,35 @@
 
 .About_body_first_item > div p {
     margin-top: 0;
+    line-height: 24px;
+    font-size: 16px;
 }
+
 .About_body_first_item > div ul {
     list-style: none;
     padding-left: 0;
 }
+
 .About_body_first_item > div li {
     width: 456px;
     height: 30px;
     padding-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* list 앞에 붙는 check 문자 */
+.About_body_first_item > div > ul > li > img {
+    width: 20px;
+    height: 20px;
+    filter: invert(63%) sepia(29%) saturate(983%) hue-rotate(157deg) brightness(96%) contrast(86%);
+    margin-right: 5px;
 }
 
 .About_body_first_item > div a {
+    width: 110.227px;
+    height: 24px;
     color: #47b2e4;
     padding: 8px 28px;
     font-weight: 500;
@@ -99,28 +106,48 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: ease-in-out 0.5s;
+    position: absolute;
+}
+
+.About_body_first_item > div a:hover {
+    background-color: #47b2e4;
+    color: var(--background-color);
+    > div > img {
+        filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(183deg) brightness(104%) contrast(100%);
+    }
+    > div {
+        position: relative;
+        left: 5px;
+    }
 }
 
 /* Read More 뒤에 붙는 화살표 */
-.About_body_first_item > div > a > i::before {
-    content: "\f138";
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
+.About_Read_More > div {
+    width: 16px;
+    height: 18px;
 }
+
+.About_Read_More > div {
+    margin-left: 5px;
+}
+.About_Read_More > div > img {
+    width: 16px;
+    height: 18px;
+    filter: invert(65%) sepia(28%) saturate(6114%) hue-rotate(178deg) brightness(112%) contrast(79%);
+}
+
 /* About page만 예외적으로 width를 전체 채우기 위해 작성 */
 #About_container {
     height: 100%;
     width: calc(100% + 200px);
     position: relative;
-    left: -88px;
+    left: -105px;
+
+    display: flex;
+    justify-content: space-around;
 }
+
 .About_body_second {
     padding: 30px 0;
     background-color: #f5f6f8;
@@ -132,6 +159,7 @@
 
 .About_body_second_item > p {
     color: color-mix(in srgb, var(--default-color), transparent 30%);
+    line-height: 24px;
 }
 
 .About_body_second > div > h3 {
