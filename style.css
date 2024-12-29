@@ -126,7 +126,7 @@ body {
     flex-direction: column;
     width: 85%;
     margin: 0 auto;
-    background-color: red;
+    background-color: white;
     box-sizing: border-box;
     height: 100dvh;
 }

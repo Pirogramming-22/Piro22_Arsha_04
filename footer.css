@@ -1,3 +1,5 @@
+
+
 /* 기본 스타일 */
 footer {
     background-color: white; /* 밝은 배경 */
@@ -10,7 +12,11 @@ footer {
     text-align: center;
     margin-bottom: 40px;
     background-color: color-mix(in srgb, #37517e, transparent 95%);
-    padding: 60px 0;
+    padding: 50px 0;
+    left: 0; 
+    right: 0; 
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%);
 }
 
 .footer_newsletter h1 {
@@ -18,6 +24,7 @@ footer {
     font-weight: bold;
     color: #37517e;
     margin-bottom: 10px;
+    font-family: var(--heading-font);
 }
 
 .footer_newsletter p {
@@ -89,17 +96,21 @@ footer {
 }
 
 .footer_arsha {
-    margin-top: 18px;
+    margin-top: 5px;
 }
 
 .footer_arsha h1,
 .footer_usefullink h4,
 .footer_ourservice h4,
 .follow_us h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #333;
+    color: #37517e;
+}
+
+.footer_arsha h1 {
+    font-size: 28px;
 }
 
 /* 텍스트와 링크 */
@@ -149,26 +160,36 @@ footer {
 
 .footer_sociallinks {
     display: flex;
+    justify-content: left;
     gap: 10px;
 }
 
 .footer_sociallinks a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #ddd;
+    display: inline-flex;
+    justify-content: center;    
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-color: #444444;
     border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-    font-size: 16px;
-    color: #444;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer_sociallinks a:hover {
-    background-color: #3498db;
-    color: #fff;
+.footer_sociallinks i {
+
 }
+
+.footer_sociallinks a:hover {
+    background-color: white;
+    color: #3498db;
+    border-color: #3498db;
+}
+
+
 
 /* 하단 컨테이너 스타일 */
 .footer_container_bottom {
@@ -191,5 +212,18 @@ footer {
 
 .footer_designed span {
     color: #3498db;
-    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer_container_top {
+        flex-direction: column;
+        align-items: center; /* 가운데 정렬 */
+        gap: 20px; /* 섹션 간 간격 */
+        padding: 20px; /* 내부 여백 */
+    }
+
+    .footer_container_top_row {
+        flex-direction: column;
+        align-items: left;
+    }
 }
