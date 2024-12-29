@@ -4,7 +4,7 @@
 
 .About_body_first {
     padding: 60px 0;
-    background-color: gray;
+    background-color: var(--background-color);
 }
 
 /* About Text */
@@ -22,17 +22,17 @@
     font-size: 32px;
     font-weight: bold;
     padding-bottom: 20px;
+    margin-top: 0;
     margin-bottom: 20px;
     position: relative; /* after의 기준이 되기 위함 */
     font-family: var(--heading-font);
-    color: #37517e;
 }
 /* 라인 구현 */
 .About_body_first h2::before {
     position: absolute;
     content: "";
     display: block;
-    background-color: pink;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
     width: 160px;
     height: 1px;
     left: 0;
@@ -42,7 +42,7 @@
 }
 .About_body_first h2::after {
     content: "";
-    background-color: red;
+    background: var(--accent-color);
     display: block;
     position: absolute;
     width: 60px;
