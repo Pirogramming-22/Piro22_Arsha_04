@@ -1,0 +1,137 @@
+.Services {
+    height: 100%;
+    width: 100%;
+}
+
+.Services_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0;
+}
+
+.Services_first_head {
+    margin: 0;
+}
+
+.Services_body_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services_body_title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative; /* after의 기준이 되기 위함 */
+    font-family: var(--heading-font);
+}
+
+.Services_body_title h2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    width: 160px;
+    height: 1px;
+    left: -10px;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.Services_body_title h2::after {
+    content: "";
+    background: var(--accent-color);
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+}
+
+.Services_first > p {
+    margin: 0;
+}
+
+.Services_body {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 960px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+}
+
+.Services_grid {
+    width: 456px;
+    height: 251px;
+    padding: 0 12px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.Services_grid_item {
+    padding: 50px 30px;
+    background-color: var(--background-color);
+    box-sizing: content-box;
+    position: relative;
+    transition: ease-in-out 0.3s;
+}
+
+.Services_grid_item:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    > h4 > a {
+        color: #47b2e4;
+    }
+}
+
+.Services_icon {
+    margin-bottom: 10px;
+    filter: invert(62%) sepia(96%) saturate(1071%) hue-rotate(169deg) brightness(95%) contrast(87%);
+}
+.Services_icon img {
+    width: 36px;
+    height: 36px;
+}
+
+.Services_grid_item > h4 {
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.Services_grid_item > h4 > a {
+    color: var(--heading-color);
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.Services_grid_item > h4 > a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.Services_grid_item > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
