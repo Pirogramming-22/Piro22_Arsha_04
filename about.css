@@ -4,7 +4,7 @@
 
 .About_body_first {
     padding: 60px 0;
-    background-color: aqua;
+    background-color: gray;
 }
 
 /* About Text */
@@ -113,4 +113,115 @@
     line-height: 1;
     vertical-align: -.125em;
     -webkit-font-smoothing: antialiased;
+}
+
+.About_body_second {
+    padding: 30px 0;
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+}
+
+.About_body_second_item > p {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.About_body_second > div > h3 {
+    color: var(--heading-color);
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.About_body_second_item {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+
+.About_body_second > div > h3 strong {
+    font-weight: bold;
+}
+
+.About_body_second_item  > p {
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.About_body_second_left {
+    margin-bottom: 20px;
+    background-color: var(--surface-color);
+    padding: 20px 20px;
+    box-sizing: content-box;
+    width: 100%;
+}
+
+#About_body_second_item {
+    flex: 2;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* 기본 체크박스 스타일 제거 */
+    -webkit-appearance: none; /* Safari 대응 */
+    -moz-appearance: none; /* Firefox 대응 */
+    display: none;
+}
+
+label h3 {
+    cursor: pointer; /* 클릭 가능한 상태로 커서 변경 */
+    color: var(--heading-color);
+    font-size: 17px;
+    margin: 0;
+    transition: var(--accent-color) 0.3s ease; /* 색상 전환 효과 */
+}
+
+label h3 > span {
+    color: var(--accent-color);
+    padding-right: 5px;
+}
+
+label img {
+    cursor: pointer;
+    filter: invert(30%) sepia(69%) saturate(350%) hue-rotate(177deg) brightness(90%) contrast(99%);
+    width: 16px;
+    height: 16px;
+}
+
+.About_checkbox_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.About_body_second_left > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.About_body_second_left_detail {
+    padding-top: 10px;
+}
+
+.About_body_second_left_detail > p {
+    margin: 0;
+}
+
+.About_checkbox_last {
+    margin-bottom: 0;
+}
+
+/* 우측 이미지 */
+.About_body_second_item > img {
+    transform: translateZ(0) scale(1);
+    max-height: 70%;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
 }
