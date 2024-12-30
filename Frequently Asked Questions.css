@@ -13,6 +13,9 @@
     padding: 20px;
     margin-top: 20px;
 }
+#Questionslist_checkbox_div5 {
+    margin-bottom: 60px;
+}
 
 .Questionslist svg {
     width: 20px;
@@ -22,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 1340px;
 }
 .Questionslist {
     display: flex;

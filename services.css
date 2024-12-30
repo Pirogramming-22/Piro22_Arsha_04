@@ -1,0 +1,221 @@
+.Services {
+    height: 100%;
+    width: 100%;
+}
+
+.Services_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0;
+}
+
+.Services_first_head {
+    margin: 0;
+}
+
+.Services_body_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services_body_title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative; /* after의 기준이 되기 위함 */
+    font-family: var(--heading-font);
+}
+
+.Services_body_title h2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    width: 160px;
+    height: 1px;
+    left: -10px;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.Services_body_title h2::after {
+    content: "";
+    background: var(--accent-color);
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+}
+
+.Services_first > p {
+    margin: 0;
+}
+
+.Services_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Services_grid {
+    width: 306.016px;
+    height: 275px;
+    padding: 0 12px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.Services_grid_item {
+    padding: 50px 30px;
+    background-color: var(--background-color);
+    box-sizing: content-box;
+    position: relative;
+    transition: ease-in-out 0.3s;
+}
+
+.Services_grid_item:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    > h4 > a {
+        color: #47b2e4;
+    }
+}
+
+.Services_icon {
+    margin-bottom: 10px;
+    filter: invert(62%) sepia(96%) saturate(1071%) hue-rotate(169deg) brightness(95%) contrast(87%);
+}
+.Services_icon img {
+    width: 36px;
+    height: 36px;
+}
+
+.Services_grid_item > h4 {
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.Services_grid_item > h4 > a {
+    color: var(--heading-color);
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.Services_grid_item > h4 > a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.Services_grid_item > p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.Services_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 417.594px;
+    width: 100%;
+    position: relative;
+}
+
+.Service_second_bg::before {
+    content: "";
+    background: color-mix(in srgb, #37517e, transparent 35%);
+    position: absolute;
+    inset: 0;
+}
+
+.Service_second_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.Service_second_content {
+    color: var(--background-color);
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.Services_second_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 936px;
+}
+
+.Services_second_title > h3 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Services_second_title > p {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.Services_second_call {
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Services_second_call > a {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid var(--contrast-color);
+    color: var(--contrast-color);
+    margin: 10px;
+    text-decoration: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+.Services_second_call > a:hover {
+    background-color: #47b2e4;
+    border-color: #47b2e4;
+}
