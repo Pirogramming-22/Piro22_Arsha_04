@@ -1,186 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header_home.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="footer.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
     <title>Arsha Bootstrap Template Demo</title>
 </head>
 <body>
     <header>
+        <div class="header_headline">
+            <div class="header_top_left">
+                <img src="https://bootstrapmade.com/assets/img/logo.png" alt="로그">
+            </div>
+            <div class="header_top_left_img">
+              <!-- <div style="background-color: #023b6d; padding: 0px; display: flex; gap: 20px; color: white; margin-top: 0; align-items: flex-start;">
+                <i class="fas fa-desktop" style="font-size: 24px;"></i> 
+                <i class="fas fa-tablet-alt" style="font-size: 24px;"></i> 
+                <i class="fas fa-mobile-alt" style="font-size: 24px;"></i>  -->
+              <img src="./img/header_top_left_컴퓨터.PNG" alt="화면 변환">
+            </div>
+              <!-- <img src="https://your-domain.com/path/to/preview.svg" alt="Icon"> -->
+            
+            <div class="header_top_middle">
+                <img src="./img/header_top_middle_화살표왼쪽.PNG" alt="화살표 왼쪽">
+                <span class="header_top_middle_title">Arsha</span>
+                <img src="./img/header_top_middle_화살표오른쪽.PNG" alt="화살표 오른쪽">
+            </div>
+            <div class="header_top_right">
+                <div class="header_top_right_hidebar">
+                    <img src="./img/header_top_right_숨김표시.PNG" alt="숨김처리 버튼">
+                </div>
+                <div class="header_top_right_download">
+                    <div class="header_download_img"><img src="./img/header_top_right_다운로드.PNG" alt="다운로드 버튼"></div>
+                    <span>DOWNLOAD</span>
+                </div>
+            </div>
+        </div>
+        <div class="header_navbar">
+            <!-- <div class="header_navbar_title"> -->
+                <h1>ARSHA</h1>
+            <!-- </div> -->
+            <!-- <div class="header_navbar"> -->
+                <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Dropdown 1</a></li>
+                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="#">Deep Dropdown 1</a></li>
+                          <li><a href="#">Deep Dropdown 2</a></li>
+                          <li><a href="#">Deep Dropdown 3</a></li>
+                          <li><a href="#">Deep Dropdown 4</a></li>
+                          <li><a href="#">Deep Dropdown 5</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Dropdown 2</a></li>
+                      <li><a href="#">Dropdown 3</a></li>
+                      <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                  <!-- <li><a class="btn-getstarted" href="#">Get Started</a></li> -->
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+              <a class="btn-getstarted" href="#">Get Started</a>
+            <!-- </div> -->
+        </div>
     </header>
+
     <main>
         <section>
-            <div class="Home">1</div>
-            <div class="About">2</div>
-            <div class="Services">3</div>
-            <div class="Portfolio">4</div>
-            <div class="Team">5</div>
-            <div class="Pricing">6</div>
-            <div class="Contact">
-                <div class="'Contact_container">
-                    <div class="Contact_container_top">
-                        <h2 class="Contact_top_first">CONTACT</h2>
-                        <p class="Contact_top_second">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-                    </div>
-                    <div class="Contact_container_bottom">
-                        <div class="Contact_info">
-                            <div class="Contact_info_address">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="Contact_info_right">
-                                    <h3>Address</h3>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
-                                </div>
-                            </div>
-                            <div class="Contact_info_call">
-                                <i class="fas fa-phone"></i>
-                                <div class="Contact_call_right">
-                                    <h3>Call Us</h3>
-                                    <p>+1 5589 55488 55</p>
-                                </div>
-                            </div>
-                            <div class="Contact_info_email">
-                                <i class="fas fa-envelope"></i>
-                                <div class="Contact_email_right">
-                                    <h3>Email Us</h3>
-                                    <p>info@example.com</p>
-                                </div>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d193559.13256472183!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1735474211204!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="Home">
+                    <div class="Home_left">
+                        <div class="Home_left_title">
+                            <h1>Better Solutions For<br>Your Business</h1>
+                            <p>We are team of talented designers making<br>websites with Bootstrap</p>
                         </div>
-                        <div class="Contact_form">
-                            <form action="forms/contact.php" method="post" class="Contact_form_container">
-                                <div class="Contact_form_row">
-                                    <div class="Contact_form_row_left">
-                                        <label for="name">Your Name</label>
-                                        <input type="text" id="name" name="name">
-                                    </div>
-                                    <div class="Contact_form_row_right">
-                                        <label for="email">Your Email</label>
-                                        <input type="email" id="email" name="email">
-                                    </div>
-                                </div>
-                                <div class="Contact_subject">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" id="subject" name="subject">
-                                </div>
-                                <div class="Contact_message">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="message" rows="10"></textarea>
-                                </div>   
-                                <button type="submit">Send Message</button>    
-                            </form>
+                        <div class="Home_left_button">
+                            <a class="btn-getstarted" href="#">Get Started</a>
+                            <a class="Home_btn_watchvideo" href="https://www.youtube.com/watch?v=Y7f98aduVJ8">
+                             <!-- <img src="./img/watch_video.PNG">--> Watch Video</a>
                         </div>
                     </div>
+                    <div class="Home_right">
+                        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/hero-img.png" class="Home_right_img_animated" alt="메인 홈페이지 이미지">
+                    </div>
+            </div>
+            <div class="Home_bottom">
+                <div class="Home_bottom_image_wrapper">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-1.png" alt="myob로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-2.png" alt="belimo로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-3.png" alt="lifegroups로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-4.png" alt="grabyo로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-5.png" alt="citrus로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-6.png" alt="trustly로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-7.png" alt="oldendorff로고">
+                    <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/clients/client-8.png" alt="lilly로고">
                 </div>
             </div>
+            <div class="About"></div>
+            <div class="Services"></div>
+            <div class="Portfolio"></div>
+            <div class="Team"></div>
+            <div class="Pricing"></div>
+            <div class="Contact"></div>
         </section>
     </main>
-    <footer>
-        <div class="footer_newsletter">
-            <h1>Join Our Newsletter</h1>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="">
-                <input type="text">
-                <input type="submit" value="Subscribe">
-            </form>
-                <div class="footer_newsletter_form"></div>
-        </div>
-        <div class="footer_container_top">
-            <div class="footer_container_top_row">
-                <div class="footer_arsha">
-                    <h1 class="footer_arsha2">ARSHA</h1>
-                    <div class="footer_arsha3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p class="footer_arsha3_phone">
-                            <strong>Phone:</strong>
-                            <span>+1 5589 55488 55</span>
-                        </p>
-                        <p class="footer_arsha3_email">
-                            <strong>Email</strong>
-                            <span>info@example.com</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="footer_usefullink">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">services</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Terms of service</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_ourservice">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Web Design</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Web development</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Product Management</a>
-                        </li>
-                        <li>
-                            <span>> </span>
-                            <a href="#">Marketing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="follow_us">
-                    <h4>Follow Us</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                    <div class="footer_sociallinks">
-                        <a href="#" class="social_link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social_link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social_link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social_link">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_container_bottom">
-            <p>
-                ©
-                <span>Copyright</span>
-                <strong>Arsha</strong>
-                <span>All Rights Reserved</span> 
-            </p>
-            <div class="footer_designed">
-                Designed by
-                <span>BootstrapMade</span>
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
 </body>
 </html>
 
