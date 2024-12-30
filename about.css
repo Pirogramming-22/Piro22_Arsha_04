@@ -244,8 +244,9 @@ input[type="checkbox"]:checked + label + .About_body_second_left_detail {
     max-height: 200px; /* 내용이 보여질 최대 높이 */
     opacity: 1; /* 시각적으로 보이게 설정 */
     padding: 10px 0; /* 내용 표시 시 패딩 추가 */
-    /* transition: max-height 0.3s ease, opacity 0.3s ease; */
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+
+    /* 펴졋다 접히는 로직인데 타일 빌레이를 어떻게 주느냐 ... */
 }
 
 label h3 {
@@ -318,7 +319,8 @@ label img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-sizing: content-box;
-    padding: 60px 20px
+    padding: 60px 20px;
+    margin: 0 10%;
 }
 
 .About_body_third_item {
