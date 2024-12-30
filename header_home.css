@@ -460,7 +460,6 @@
     justify-content: space-between;
     height: 100vh;
     background-color: #4668a2;
-    padding-left: 50px;
     /*추가함*/
     position: relative;
     z-index: 1;
@@ -481,6 +480,7 @@
   flex: 1;
   color: white;
   padding-right: 30px;
+  padding-left: 60px;
 }
 
 .Home_left_title h1 {
@@ -550,6 +550,9 @@
   100% {
       transform: translateY(0); /* 다시 원래 위치로 */
   }
+}
+.Home_bottom_image_wrapper {
+  margin: 0 0;
 }
 
 .Home_right_img_animated {
