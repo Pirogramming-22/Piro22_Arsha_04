@@ -166,7 +166,7 @@ body {
     font-family: var(--default-font);
 }
 
-section {
+.Portfolio_section {
     display: block;
     width: 100%;
     color: var(--default-color);
