@@ -12,6 +12,10 @@
   z-index: 10001;
 }
 
+.header_top_left_img {
+  cursor: pointer;
+}
+
 .header_top_left img {
   height: 28px; 
   /* margin-right: 10px; 텍스트와 로고 간 여백 */
@@ -136,6 +140,10 @@
   z-index: 1;
   margin: 0 auto;
   list-style: none;
+}
+
+.dropdown img {
+  height: 15px;
 }
 
 .btn-getstarted,
@@ -570,7 +578,7 @@
   padding: 12px 0;
   position: relative;
   bottom: 0;
-  left: 10px;
+  left: 0;
   right: 10px;
   /* width: 100%; */
   z-index: 9999;
@@ -593,37 +601,6 @@
   animation:  slide-left 35s infinite;
   flex-shrink: 0; /* 이미지 크기 유지 */
 }
-
-
-/* @keyframes translate-left {
-  0% {
-      transform: translateX(0); 
-  }
-  12.5% {
-      transform: translateX(-100%);
-  }
-  25% {
-      transform: translateX(-200%);
-  }
-  37.5% {
-      transform: translateX(-300%); 
-  }
-  50% {
-      transform: translateX(-400%); 
-  }
-  62.5% {
-      transform: translateX(-500%); 
-  }
-  75% {
-      transform: translateX(-600%); 
-  }
-  87.5% {
-      transform: translateX(-700%); 
-  }
-  100% {
-      transform: translateX(0);
-  }
-} */
 
 
 @keyframes slide-left {

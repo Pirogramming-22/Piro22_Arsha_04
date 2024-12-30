@@ -371,7 +371,8 @@ ul {
 
 .portfolio-item .portfolio-info .preview-link {
     position: absolute;
-    right: 50px;
+    width: 10%;
+    right: 60px;
     font-size: 24px;
     top: calc(50% - 14px);
     color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -381,10 +382,10 @@ ul {
 }
 
 .portfolio-item .portfolio-info .details-link {
-    right: 14px;
+    width: 8%;
     font-size: 28px;
     position: absolute;
-    right: 50px;
+    right: 20px;
     font-size: 24px;
     top: calc(50% - 14px);
     color: color-mix(in srgb, var(--default-color), transparent 30%);
