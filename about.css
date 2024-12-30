@@ -5,7 +5,6 @@
 .About_body {
     background-color: #ffffff;
 }
-
 .About_body_first {
     padding: 60px 0;
     background-color: var(--background-color);
@@ -14,6 +13,7 @@
 /* About Text */
 .About_body_first_title {
     padding: 0 12px;
+    padding-top: 110px;
     padding-bottom: 60px;
 }
 
@@ -248,9 +248,7 @@ input[type="checkbox"]:checked + label + .About_body_second_left_detail {
     max-height: 200px; /* 내용이 보여질 최대 높이 */
     opacity: 1; /* 시각적으로 보이게 설정 */
     padding: 10px 0; /* 내용 표시 시 패딩 추가 */
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-
-    /* 펴졋다 접히는 로직인데 타일 빌레이를 어떻게 주느냐 ... */
+    transition: max-height 0.3s ease-in-out;
 }
 
 label h3 {

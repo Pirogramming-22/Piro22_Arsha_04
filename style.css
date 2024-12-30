@@ -146,7 +146,11 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: white;
     box-sizing: border-box;
     height: 100dvh;
+}
+
+.Home {
+    height: 50px;
+    background-color: white;
 }
