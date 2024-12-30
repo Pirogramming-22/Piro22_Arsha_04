@@ -56,20 +56,23 @@
     margin: auto;
 }
 
-
 .About_body_first_item > div {
-    margin-top: 24px;
     padding: 0 12px;
-    width: 456px;
-    height: 209px;
+    width: 636px;
+    height: 184.980px;
 }
 
 .About_body_first_item > div p {
     margin-top: 0;
     line-height: 24px;
     font-size: 16px;
+    width: 636.02px;
+    height: 95.997px;
 }
 
+#About_body_first_item_p {
+    height: 47.99px;
+}
 .About_body_first_item > div ul {
     list-style: none;
     padding-left: 0;
@@ -140,10 +143,7 @@
 /* About page만 예외적으로 width를 전체 채우기 위해 작성 */
 #About_container {
     height: 100%;
-    width: calc(100% + 200px);
     position: relative;
-    left: -105px;
-
     display: flex;
     justify-content: space-around;
 }
@@ -157,12 +157,18 @@
     height: 70%;
 }
 
-.About_body_second_item > p {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
-    line-height: 24px;
+.About_body_second_item:nth-child(1) {
+    padding: 0 60px;
 }
 
-.About_body_second > div > h3 {
+
+.About_body_second_left_all > p {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.About_body_second_left_all > h3 {
     color: var(--heading-color);
     font-size: 34px;
     font-weight: 400;
@@ -176,7 +182,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 3;
+    flex: 1.25;
 }
 
 .About_body_second > div > h3 strong {
@@ -188,7 +194,7 @@
     margin-bottom: 16px;
 }
 
-.About_body_second_left_all {
+.About_body_second_left_list {
     box-sizing: content-box;
     width: 100%;
 }
@@ -202,14 +208,44 @@
 }
 
 #About_body_second_item {
-    flex: 2;
+    flex: 1;
 }
 
 input[type="checkbox"] {
-    appearance: none; /* 기본 체크박스 스타일 제거 */
-    -webkit-appearance: none; /* Safari 대응 */
-    -moz-appearance: none; /* Firefox 대응 */
     display: none;
+}
+
+/* 상세 내용 기본 상태 숨기기 */
+/* 기본적으로 숨김 */
+/* 초과 내용 숨김 */
+/*  부드러운 애니메이션 */
+/* 초기 패딩 제거 */
+/* 시각적으로도 숨기기 */
+.About_body_second_left_detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+    opacity: 0;
+    content: "";
+}
+
+input[type="checkbox"]:checked + label {
+    .About_checkbox_div h3 {
+        color: #47b2e4;
+    }
+    .About_checkbox_div img {
+        transform: rotate(90deg);
+        filter: invert(62%) sepia(98%) saturate(436%) hue-rotate(169deg) brightness(89%) contrast(100%);
+    }
+}
+/* 체크박스가 활성화되었을 때 상세 내용 표시 */
+input[type="checkbox"]:checked + label + .About_body_second_left_detail {
+    max-height: 200px; /* 내용이 보여질 최대 높이 */
+    opacity: 1; /* 시각적으로 보이게 설정 */
+    padding: 10px 0; /* 내용 표시 시 패딩 추가 */
+    /* transition: max-height 0.3s ease, opacity 0.3s ease; */
+    transition: max-height 0.3s ease-in-out;
 }
 
 label h3 {
@@ -227,7 +263,7 @@ label h3 > span {
 
 label img {
     cursor: pointer;
-    filter: invert(30%) sepia(69%) saturate(350%) hue-rotate(177deg) brightness(90%) contrast(99%);
+    filter: invert(24%) sepia(1%) saturate(1283%) hue-rotate(26deg) brightness(102%) contrast(90%);
     width: 16px;
     height: 16px;
 }
@@ -236,12 +272,25 @@ label img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.About_checkbox_div:hover {
+    h3 {
+        color: #47b2e4;
+    }
+
+    img {
+        filter: invert(62%) sepia(98%) saturate(436%) hue-rotate(169deg) brightness(89%) contrast(100%);
+    }
 }
 
 .About_body_second_left > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 .About_body_second_left_detail {
@@ -250,6 +299,7 @@ label img {
 
 .About_body_second_left_detail > p {
     margin: 0;
+    color: #444444;
 }
 
 .About_checkbox_last {
@@ -259,8 +309,8 @@ label img {
 /* 우측 이미지 */
 .About_body_second_item > img {
     transform: translateZ(0) scale(1);
-    max-width: 80%;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: 75%;
     box-sizing: content-box;
 }
 
@@ -302,7 +352,7 @@ label img {
 }
 
 .About_graph {
-    width: 456px;
+    width: 100%;
     height: 60px;
 }
 
@@ -317,7 +367,7 @@ label img {
 
 .About_graph_total {
     position: relative;
-    width: 456px;
+    width: 100%;
     height: 10px;
     background: color-mix(in srgb, var(--heading-color), transparent 90%);
     z-index: 0;
@@ -325,7 +375,7 @@ label img {
 
 .About_graph_percent {
     position: absolute;
-    width: 456px;
+    width: 100%;
     height: 10px;
     background-color: var(--heading-color);
     z-index: 1;
