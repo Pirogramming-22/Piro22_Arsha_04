@@ -1,0 +1,123 @@
+.section_title p {
+    width: 1200px;
+}
+
+.Frequently_Asked_Questions {
+    background-color: #f5f6f8;
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+}
+.Questionslist_checkbox_div {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+#Questionslist_checkbox_div5 {
+    margin-bottom: 60px;
+}
+
+.Questionslist svg {
+    width: 20px;
+    height: 20px;
+}
+.Questionslist_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1340px;
+}
+.Questionslist {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+.Questionslist_left {
+    display: flex;
+    align-items: center;
+}
+
+/* 체크박스 */
+input[type="checkbox"] {
+    display: none;
+}
+
+.Questionslist_second_left_detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+    opacity: 0;
+    content: "";
+    background-color: #ffffff;
+}
+.Questionslist_second_left_detail p {
+    padding: 20px;
+    margin: 0;
+}
+.Questionslist_checkbox_div h3 {
+    margin-left: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+    .Questionslist_checkbox_div h3 {
+        color: #47b2e4;
+    }
+    .Questionslist_checkbox_div img {
+        transform: rotate(90deg);
+        filter: invert(62%) sepia(98%) saturate(436%) hue-rotate(169deg) brightness(89%) contrast(100%);
+    }
+
+}
+
+input[type="checkbox"]:checked + label + .Questionslist_second_left_detail {
+    max-height: 200px; /* 내용이 보여질 최대 높이 */
+    opacity: 1; /* 시각적으로 보이게 설정 */
+    padding: 10px 0; /* 내용 표시 시 패딩 추가 */
+    /* transition: max-height 0.3s ease, opacity 0.3s ease; */
+    transition: max-height 0.3s ease-in-out;
+}
+
+label h3 {
+    cursor: pointer; /* 클릭 가능한 상태로 커서 변경 */
+    color: #37517e;
+    font-size: 17px;
+    margin: 0;
+    transition: #47b2e4 0.3s ease; /* 색상 전환 효과 */
+}
+
+label img {
+    cursor: pointer;
+    filter: invert(24%) sepia(1%) saturate(1283%) hue-rotate(26deg) brightness(102%) contrast(90%);
+    width: 16px;
+    height: 16px;
+}
+
+.Questionslist_checkbox_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Questionslist_checkbox_div:hover {
+    h3 {
+        color: #47b2e4;
+    }
+
+    img {
+        filter: invert(62%) sepia(98%) saturate(436%) hue-rotate(169deg) brightness(89%) contrast(100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

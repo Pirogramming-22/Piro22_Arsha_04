@@ -1,0 +1,510 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-primary-text-emphasis: #052c65;
+    --bs-secondary-text-emphasis: #2b2f32;
+    --bs-success-text-emphasis: #0a3622;
+    --bs-info-text-emphasis: #055160;
+    --bs-warning-text-emphasis: #664d03;
+    --bs-danger-text-emphasis: #58151c;
+    --bs-light-text-emphasis: #495057;
+    --bs-dark-text-emphasis: #495057;
+    --bs-primary-bg-subtle: #cfe2ff;
+    --bs-secondary-bg-subtle: #e2e3e5;
+    --bs-success-bg-subtle: #d1e7dd;
+    --bs-info-bg-subtle: #cff4fc;
+    --bs-warning-bg-subtle: #fff3cd;
+    --bs-danger-bg-subtle: #f8d7da;
+    --bs-light-bg-subtle: #fcfcfd;
+    --bs-dark-bg-subtle: #ced4da;
+    --bs-primary-border-subtle: #9ec5fe;
+    --bs-secondary-border-subtle: #c4c8cb;
+    --bs-success-border-subtle: #a3cfbb;
+    --bs-info-border-subtle: #9eeaf9;
+    --bs-warning-border-subtle: #ffe69c;
+    --bs-danger-border-subtle: #f1aeb5;
+    --bs-light-border-subtle: #e9ecef;
+    --bs-dark-border-subtle: #adb5bd;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg: #fff;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-emphasis-color: #000;
+    --bs-emphasis-color-rgb: 0, 0, 0;
+    --bs-secondary-color: rgba(33, 37, 41, 0.75);
+    --bs-secondary-color-rgb: 33, 37, 41;
+    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg-rgb: 233, 236, 239;
+    --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+    --bs-tertiary-color-rgb: 33, 37, 41;
+    --bs-tertiary-bg: #f8f9fa;
+    --bs-tertiary-bg-rgb: 248, 249, 250;
+    --bs-heading-color: inherit;
+    --bs-link-color: #0d6efd;
+    --bs-link-color-rgb: 13, 110, 253;
+    --bs-link-decoration: underline;
+    --bs-link-hover-color: #0a58ca;
+    --bs-link-hover-color-rgb: 10, 88, 202;
+    --bs-code-color: #d63384;
+    --bs-highlight-color: #212529;
+    --bs-highlight-bg: #fff3cd;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-xxl: 2rem;
+    --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+    --bs-border-radius-pill: 50rem;
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    --bs-focus-ring-width: 0.25rem;
+    --bs-focus-ring-opacity: 0.25;
+    --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+    --bs-form-valid-color: #198754;
+    --bs-form-valid-border-color: #198754;
+    --bs-form-invalid-color: #dc3545;
+    --bs-form-invalid-border-color: #dc3545;
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --nav-color: #ffffff;
+    --nav-hover-color: #47b2e4;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-hover-color: #47b2e4;
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --swiper-navigation-size: 44px;
+    --swiper-theme-color: #007aff;
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.Portfolio_section {
+    display: block;
+    width: 100%;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    margin: 0 auto;
+    overflow: clip;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.Portfolio_title_container {
+    position: relative;
+    padding-bottom: 60px;
+    text-align: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+}
+
+.Portfolio_title_container h2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+.Portfolio_title_container h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.Portfolio_title_container h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.Portfolio_title_container p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.Portfolio_container {
+    display: block;
+    margin: 0 auto;
+}
+
+.Portfolio_filters {
+    margin: 0 auto 20px auto;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.Portfolio_section .Portfolio_filters li:hover, .Portfolio_section .Portfolio_filters li.Portfolio_active {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+}
+
+.Portfolio_filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--heading-font);
+}
+
+.Portfolio_photo_container {
+    position: relative;
+    left: -200px;
+    height: 909.547px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-app {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.filter-product {
+    position: absolute;
+    left: 319.992px;
+    top: 0px;
+}
+
+.filter-branding {
+    position: absolute;
+    left: 639.984px;
+    top: 0px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.Portfolio_photo_container > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item .portfolio-info {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transform: translateY(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    color: white;
+    background: color-mix(in srgb, var(--background-color), transparent 10%);
+    padding: 15px;
+}
+
+.portfolio-item:hover .portfolio-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 50px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.portfolio-item .portfolio-info p {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 50px;
+}
+
+.portfolio-item .portfolio-info .preview-link {
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 14px);
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    transition: 0.3s;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.portfolio-item .portfolio-info .details-link {
+    right: 14px;
+    font-size: 28px;
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 14px);
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    transition: 0.3s;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.Portfolio_section .Portfolio_filters li:hover, .Portfolio_section .Portfolio_filters li.Portfolio_active {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+}
+
+.bi-zoom-in::before {
+    content: "\f62c";
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+}
+
+.bi-link-45deg::before {
+    content: "\f470";
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Portfolio_photo_container > div {
+    transition: opacity 0.5s ease, transform 0.5s ease, left 0.5s ease, top 0.5s ease;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-product1 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-product2 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-product3 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-branding1 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-branding2 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-branding3 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-app2 {
+    position: absolute !important;
+    left: 319.992px !important;
+    top: 0px !important;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+.Portfolio_filters:hover ~ .Portfolio_photo_container > #filter-app3 {
+    position: absolute !important;
+    left: 639.984px !important;
+    top: 0px !important;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+@media (max-width: 1199px) {
+    section {
+        scroll-margin-top: 66px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Portfolio_title_container, .Portfolio_container {
+        max-width: 960px;
+    }
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .Portfolio_title_container, .Portfolio_container {
+        max-width: 720px;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 576px) {
+    .Portfolio_title_container, .Portfolio_container {
+        max-width: 540px;
+    }
+}
