@@ -103,7 +103,7 @@
     position: fixed;
     color: rgba(40, 58, 90, 0.9);
     background-color: rgba(40, 58, 90, 0.9);
-    padding: 25px 20px;
+    padding: 0 30px;
     transition: all 0.5s;
     z-index: 10000;
     display: flex;
@@ -117,6 +117,9 @@
     flex-direction: row;
     transition: background-color 0.3s, color 0.3s;
     margin-top: 35px;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header_navbar h1 {
@@ -145,6 +148,10 @@
 .dropdown img {
   height: 15px;
 }
+
+
+
+
 
 .btn-getstarted,
 .btn-getstarted:focus {
@@ -598,7 +605,7 @@
   display: inline-block;
   transform: translate3d(0px,0,0);
   /* animation: translate-left 35s infinite; */
-  animation:  slide-left 35s infinite;
+  animation:  slide-left 18s infinite;
   flex-shrink: 0; /* 이미지 크기 유지 */
 }
 
