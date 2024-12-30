@@ -93,7 +93,7 @@ input:focus, textarea:focus {
 }
 
 /* 각 섹션 스타일 */
-.footer_arsha,
+
 .footer_usefullink,
 .footer_ourservice,
 .follow_us {
@@ -103,6 +103,7 @@ input:focus, textarea:focus {
 
 .footer_arsha {
     margin-top: 5px;
+    flex: 2;
 }
 
 .footer_arsha h1,
@@ -170,7 +171,7 @@ input:focus, textarea:focus {
     gap: 10px;
 }
 
-.footer_sociallinks a {
+.footer_sociallinks a { 
     display: inline-flex;
     justify-content: center;    
     align-items: center;
