@@ -1,0 +1,255 @@
+/*Team*/
+.Team {
+    padding: 60px 0;
+    margin: 0 117px;
+}
+.section_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 12px;
+    padding-bottom: 50px;
+    
+}
+.section_title p {
+    padding: 10px;
+}
+.title_name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #37517e;
+    text-transform: uppercase;
+    
+}
+.underline_gray {
+    position: absolute;
+    height: 1px;
+    width: 160px;
+    background-color: gray;
+    top:90px;
+}
+.underline_blue {
+    position: absolute;
+    height: 3px;
+    width: 60px;
+    background-color: #47b2e4;
+    top: 89px;
+}
+
+.membercard {
+    display: flex;
+    align-items: center;
+    gap:30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.membercard:hover {
+    transform: translateY(-10px); 
+}
+.member_picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.member_name {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+    font-family: "Jost", sans-serif; /*적용X*/
+}
+.memeber_job {
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 500;
+
+}
+.middle_line {
+    width: 50px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 80%);
+}
+.member_text {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.member_social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.ironback {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color-mix(in srgb, #444444, transparent 94%);
+
+}
+
+.ironback svg, .ironback img{
+    height: 18px;
+}
+.member_social a:hover {
+    background-color: #47b2e4;
+    img {
+        filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(183deg) brightness(104%) contrast(100%);
+    }
+}
+
+#membercard_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 990px) {
+    #membercard_container {
+      grid-template-columns: 1fr; 
+    }
+}
+
+/*pricing*/
+.Pricing {
+    position: relative;
+    width: 100vw; /* 뷰포트의 전체 너비 */
+    margin-left: calc(-50vw + 50%); /* 부모의 가운데 정렬을 유지한 채 확장 */
+    background-color: #f5f6f8; /*var(--background-color);*/
+    padding: 60px 0;
+}
+#pricing_container {
+    max-width: 85%; /* 내부 콘텐츠의 최대 너비 */
+    margin: 0 auto;
+}
+.pricingcard {
+    background-color: #ffffff;/*var(--surface-color);*/
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #f5f6f8;/*var(--background-color);*/
+    padding: 60px 40px;
+    height: 100%;
+    border-radius: 5px;
+    width: 440px;
+}
+.pricingcard h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e; /*var(--heading-color);
+    font-family: var(--heading-font);*/
+}
+.pricingcard h4 {
+    color: #47b2e4; /* 메인 색상 */
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    align-items: flex-start; /* 세로 정렬 조정 */
+    gap: 4px; /* 요소 간격 조정 */
+    position: relative;
+}
+
+.sub {
+    font-size: 28px; /* $ 기호 크기 */
+    color: #47b2e4;
+    position: absolute;
+    
+}
+.price {
+    font-size: 48px; /* 숫자 크기 */
+    font-weight: 700;
+    color: #47b2e4;
+    margin-left: 15px;
+}
+.month_0 {
+    color: color-mix(in srgb, #444444, transparent 50%);/*color-mix(in srgb, var(--default-color), transparent 50%);*/
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+.month {
+    color: color-mix(in srgb, #444444, transparent 50%);/*color-mix(in srgb, var(--default-color), transparent 50%);*/
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+.pricing_li svg {
+    width: 45px;
+    height: 15px;
+}
+.pricing_li{
+    padding: 20px 0;
+    list-style: none;
+    color: color-mix(in srgb, #444444, transparent 30%);/*color-mix(in srgb, var(--default-color), transparent 30%);*/
+    text-align: left;
+    line-height: 20px;
+    margin-top: 0;
+}
+.pricing_li li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.pricing_li .no {
+    text-decoration: line-through;
+    color: color-mix(in srgb, var(--default-color), transparent 60%); /*color-mix(in srgb, var(--default-color), transparent 60%);*/
+}
+.pricing_button {
+    color: #47b2e4; /*var(--accent-color);*/
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    /*font-family: var(--heading-font);*/
+    transition: 0.3s;
+    border: 1px solid #47b2e4;/*var(--accent-color);*/
+    transition: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+#pricing_button2 {
+    color: #ffffff;
+    background-color:#47b2e4;
+}
+#pricingcard2 {
+    border-top-color: #47b2e4;/*var(--accent-color);*/
+}
+.pricing_button:hover {
+    color: #ffffff;
+    background-color:#47b2e4;
+}
+#pricingcard_container {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 990px) {
+    #pricingcard_container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        gap:30px;
+    }
+    .pricingcard {
+        width: 660px;
+        height: 420px;
+    }
+}
+@media (max-width: 748px) {
+    #pricingcard_container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        gap:30px;
+    }
+    .pricingcard {
+        width: 440px;
+        height: 420px;
+    }
+}
