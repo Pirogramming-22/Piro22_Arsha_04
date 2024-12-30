@@ -2,6 +2,10 @@
     font-family: var(--heading-font);
 }
 
+.About_body {
+    background-color: #ffffff;
+}
+
 .About_body_first {
     padding: 60px 0;
     background-color: var(--background-color);
@@ -281,7 +285,6 @@ label img {
     h3 {
         color: #47b2e4;
     }
-
     img {
         filter: invert(62%) sepia(98%) saturate(436%) hue-rotate(169deg) brightness(89%) contrast(100%);
     }
