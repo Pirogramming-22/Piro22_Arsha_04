@@ -16,6 +16,6 @@ JavaScript는 사용 금지❗
 
 김선주 - Team, Pricing
 
-김진수 - Contact, Footer
+임진수 - Contact, Footer
 
 ### 포기하지 않습니다.
