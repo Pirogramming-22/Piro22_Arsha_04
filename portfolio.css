@@ -276,6 +276,7 @@ ul {
 
 .Portfolio_photo_container {
     position: relative;
+    left: -200px;
     height: 909.547px;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
