@@ -78,7 +78,7 @@ input:focus, textarea:focus {
 /* 상단 컨테이너 스타일 */
 .footer_container_top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 30px;
@@ -97,8 +97,8 @@ input:focus, textarea:focus {
 .footer_usefullink,
 .footer_ourservice,
 .follow_us {
-    flex: 1; /* 각 섹션 동일한 너비 */
-    min-width: 200px; /* 최소 너비 */
+    flex: 1; 
+    min-width: 200px; 
 }
 
 .footer_arsha {
